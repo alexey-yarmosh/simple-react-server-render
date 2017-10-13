@@ -1,3 +1,6 @@
+require('babel-register')({
+  presets: ['react']
+});
 var express = require('express');
 var React = require('react');
 var ReactDOMServer = require('react-dom/server');
