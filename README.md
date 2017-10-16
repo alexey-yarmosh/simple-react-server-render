@@ -1,2 +1,2 @@
-Server rendering of html && creating of client `bundle.js`
+##### Server rendering of html && creating of client `bundle.js`
 `npm start`
