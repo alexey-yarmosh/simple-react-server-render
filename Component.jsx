@@ -1,17 +1,27 @@
 var React = require('react');
 var createClass = require('create-react-class');
 
-module.exports = createClass({
+class Heading extends React.Component {
   _handleClick() {
     alert('Click!');
-  },
+  }
 
-  render: function() {
+  render() {
     return (
-      <div>
-        <h1>Hello World!</h1>
-        <button onClick={this._handleClick}>Click</button>
-      </div>
+      <html>
+        <head>
+          <link rel="stylesheet" href="./style.css" />
+        </head>
+        <body>
+          <div>
+            <h1>Hello World!</h1>
+            <button onClick={this._handleClick}>Click</button>
+          </div>
+          <script src='./bundle.js' />
+        </body>
+      </html>
     );
   }
-});
+};
+
+module.exports = Heading;

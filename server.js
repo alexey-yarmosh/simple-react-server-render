@@ -9,10 +9,11 @@ var Component = require('./Component.jsx');
 
 var app = express();
 
+app.use(express.static('public'));
 app.get('/', function(req, res) {
   var content = ReactDOMServer.renderToString(
     React.createElement(Component)
-  );
+  );  
   res.send(content);
 });
 
